@@ -59,5 +59,66 @@ namespace Sinter2
                 MessageBox.Show("Erro ao salvar Arquivo \n" + ex.Message);
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string Query = "select * from Sinter_DB.GHL_Registros2 " +
+                    "WHERE Name == '" + this.txtSearch.Text + "' ORDER BY Identificacao DESC;";
+
+                MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                //  MyConn2.Open();  
+                //For offline connection we weill use  MySqlDataAdapter class.  
+                MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
+                MyAdapter.SelectCommand = MyCommand2;
+                DataTable dTable = new DataTable();
+                MyAdapter.Fill(dTable);
+                dataGridView1.DataSource = dTable; // here i have assign dTable object to the dataGridView1 object to display data.               
+                                                   // MyConn2.Close();  
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void RegisterArts_Load(object sender, EventArgs e)
+        {
+            DataGrid();
+        }
+
+        public void DataGrid()
+        {
+            try
+            {
+                //Display query  
+                string Query = "select * from Sinter_DB.GHL_Registros2 ORDER BY Identificacao DESC;";
+                MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                //  MyConn2.Open();  
+                //For offline connection we weill use  MySqlDataAdapter class.  
+                MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
+                MyAdapter.SelectCommand = MyCommand2;
+                DataTable dTable = new DataTable();
+                MyAdapter.Fill(dTable);
+                dataGridView1.DataSource = dTable; // here i have assign dTable object to the dataGridView1 object to display data.               
+                                                   // MyConn2.Close();  
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        
     }
 }

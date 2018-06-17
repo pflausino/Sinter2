@@ -135,6 +135,7 @@
             this.btnSearch.TabIndex = 12;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -150,6 +151,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(486, 291);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtDate
             // 
@@ -212,6 +214,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "RegisterArts";
             this.Text = "RegisterArts";
+            this.Load += new System.EventHandler(this.RegisterArts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numType)).EndInit();
             this.ResumeLayout(false);
