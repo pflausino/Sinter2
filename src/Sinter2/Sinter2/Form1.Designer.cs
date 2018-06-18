@@ -36,12 +36,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Freestyle Script", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(589, 282);
+            this.label1.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(528, 317);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 58);
+            this.label1.Size = new System.Drawing.Size(140, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "beta";
+            this.label1.Text = "beta 2.0.8";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1

@@ -70,7 +70,7 @@ namespace Sinter2
             try
             {
                 string Query = "select * from Sinter_DB.GHL_Registros2 " +
-                    "WHERE Name == '" + this.txtSearch.Text + "' ORDER BY Identificacao DESC;";
+                    "WHERE Nome LIKE '" + "%" + this.txtSearch.Text + "%" + "' ORDER BY Identificacao DESC;";
 
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
