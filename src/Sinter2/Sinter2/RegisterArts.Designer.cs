@@ -40,10 +40,10 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbType = new System.Windows.Forms.ComboBox();
             this.numType = new System.Windows.Forms.NumericUpDown();
+            this.txtDate = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numType)).BeginInit();
             this.SuspendLayout();
@@ -146,19 +146,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(302, 68);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(486, 292);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // txtDate
-            // 
-            this.txtDate.Location = new System.Drawing.Point(88, 198);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(153, 20);
-            this.txtDate.TabIndex = 16;
             // 
             // label5
             // 
@@ -187,18 +182,30 @@
             // numType
             // 
             this.numType.Location = new System.Drawing.Point(90, 163);
+            this.numType.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.numType.Name = "numType";
             this.numType.Size = new System.Drawing.Size(151, 20);
             this.numType.TabIndex = 18;
+            // 
+            // txtDate
+            // 
+            this.txtDate.Location = new System.Drawing.Point(88, 198);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(153, 20);
+            this.txtDate.TabIndex = 19;
             // 
             // RegisterArts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 372);
+            this.Controls.Add(this.txtDate);
             this.Controls.Add(this.numType);
             this.Controls.Add(this.cbType);
-            this.Controls.Add(this.txtDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtSearch);
@@ -236,9 +243,9 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.NumericUpDown numType;
+        private System.Windows.Forms.MaskedTextBox txtDate;
     }
 }

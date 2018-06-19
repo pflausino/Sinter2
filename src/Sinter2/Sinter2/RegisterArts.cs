@@ -18,6 +18,7 @@ namespace Sinter2
         public RegisterArts()
         {
             InitializeComponent();
+            txtDate.Mask = "00/00/0000";
         }
 
         private void label4_Click(object sender, EventArgs e)

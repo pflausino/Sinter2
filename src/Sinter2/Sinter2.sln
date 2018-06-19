@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinter2", "Sinter2\Sinter2.csproj", "{8DE95354-651E-4EC7-9DDB-4F22468CA2C3}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sinter2.0.8", "Sinter2.0.8\Sinter2.0.8.vdproj", "{E599B96E-0B4F-44C3-9956-F869D0548912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{8DE95354-651E-4EC7-9DDB-4F22468CA2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE95354-651E-4EC7-9DDB-4F22468CA2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE95354-651E-4EC7-9DDB-4F22468CA2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E599B96E-0B4F-44C3-9956-F869D0548912}.Debug|Any CPU.ActiveCfg = Debug
+		{E599B96E-0B4F-44C3-9956-F869D0548912}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
