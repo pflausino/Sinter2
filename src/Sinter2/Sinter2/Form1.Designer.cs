@@ -41,7 +41,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "beta 2.0.8";
+            this.label1.Text = "beta 2.0.9";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1

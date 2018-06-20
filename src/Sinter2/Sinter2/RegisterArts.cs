@@ -14,7 +14,8 @@ namespace Sinter2
     public partial class RegisterArts : Form
     {
         //String de Conexão
-        string MyConnection = "datasource=10.0.0.100;port=3306;username=develop;password=734m0d3m215";
+        string MyConnection = "datasource=sql49.main-hosting.eu;port=3306;username=u812598544_prod;password=lEsB2pyTr8vu";
+        //string MyConnection = "datasource=10.0.0.100;port=3306;username=develop;password=734m0d3m215";
         public RegisterArts()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace Sinter2
         {
             try
             {
-                string Query = "insert into Sinter_DB.GHL_Registros2(" +
+                string Query = "insert into u812598544_sinte.GHL_Registros2(" +
                         "Nome,Firma,Tipo_de_Arquivo,N_do_Arquivo,Data" +
                     ") values('" +
                         this.txtName.Text + "','" + 
@@ -70,7 +71,7 @@ namespace Sinter2
         {
             try
             {
-                string Query = "select * from Sinter_DB.GHL_Registros2 " +
+                string Query = "select * from u812598544_sinte.GHL_Registros2 " +
                     "WHERE Nome LIKE '" + "%" + this.txtSearch.Text + "%" + "' ORDER BY Identificacao DESC;";
 
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
@@ -102,7 +103,7 @@ namespace Sinter2
             try
             {
                 //Display query  
-                string Query = "select * from Sinter_DB.GHL_Registros2 ORDER BY Identificacao DESC;";
+                string Query = "select * from u812598544_sinte.GHL_Registros2 ORDER BY Identificacao DESC;";
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
                 //  MyConn2.Open();  
