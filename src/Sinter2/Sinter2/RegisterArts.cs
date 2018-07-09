@@ -22,6 +22,8 @@ namespace Sinter2
             txtDate.Mask = "00/00/0000";
 
             txtDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            txtName.Focus();
         }
 
         private void label4_Click(object sender, EventArgs e)
