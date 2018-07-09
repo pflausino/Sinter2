@@ -20,6 +20,8 @@ namespace Sinter2
         {
             InitializeComponent();
             txtDate.Mask = "00/00/0000";
+
+            txtDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -54,6 +56,11 @@ namespace Sinter2
 
                 MyConn.Close();
 
+                txtName.Clear();
+                txtFirma.Clear();
+
+                txtName.Focus();
+
             }
             catch (Exception ex)
             {
@@ -71,7 +78,7 @@ namespace Sinter2
         {
             try
             {
-                string Query = "select * from u812598544_sinte.GHL_Registros2 " +
+                string Query = "select `Identificacao`,`Nome`,`Firma`,`Tipo_de_Arquivo`,`N_do_Arquivo`,`Data`  from u812598544_sinte.GHL_Registros2 " +
                     "WHERE Nome LIKE '" + "%" + this.txtSearch.Text + "%" + "' ORDER BY Identificacao DESC;";
 
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
@@ -103,7 +110,7 @@ namespace Sinter2
             try
             {
                 //Display query  
-                string Query = "select * from u812598544_sinte.GHL_Registros2 ORDER BY Identificacao DESC;";
+                string Query = "select `Identificacao`,`Nome`,`Firma`,`Tipo_de_Arquivo`,`N_do_Arquivo`,`Data` from u812598544_sinte.GHL_Registros2 ORDER BY Identificacao DESC;";
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
                 //  MyConn2.Open();  
@@ -121,6 +128,11 @@ namespace Sinter2
             }
         }
 
-        
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtName.Clear();
+            txtFirma.Clear();
+
+        }
     }
 }

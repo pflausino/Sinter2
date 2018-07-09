@@ -60,7 +60,7 @@ namespace Sinter2
             try
             {
                 string Query = "select * from u812598544_sinte.GHL_Registros2 " +
-                    "WHERE Nome LIKE '" + "%" + this.txtSearch.Text + "%" + "' ORDER BY Identificacao DESC;";
+                    "WHERE Nome LIKE '" + "%" + this.txtSearch.Text + "%" + "' ORDER BY Nome ;";
 
                 MySqlConnection MyConn2 = new MySqlConnection(MyConnection);
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);

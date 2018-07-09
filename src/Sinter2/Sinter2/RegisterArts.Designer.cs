@@ -72,14 +72,14 @@
             this.txtName.Location = new System.Drawing.Point(88, 34);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(153, 20);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 1;
             // 
             // txtFirma
             // 
             this.txtFirma.Location = new System.Drawing.Point(88, 76);
             this.txtFirma.Name = "txtFirma";
             this.txtFirma.Size = new System.Drawing.Size(153, 20);
-            this.txtFirma.TabIndex = 4;
+            this.txtFirma.TabIndex = 2;
             // 
             // label2
             // 
@@ -111,6 +111,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Enabled = false;
             this.btnDelete.Location = new System.Drawing.Point(114, 336);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
@@ -126,6 +127,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSearch
             // 
@@ -173,11 +175,12 @@
             "Photoshop",
             "Jpeg",
             "Png",
-            "PDF"});
+            "PDF",
+            "InDesign"});
             this.cbType.Location = new System.Drawing.Point(88, 121);
             this.cbType.Name = "cbType";
             this.cbType.Size = new System.Drawing.Size(153, 21);
-            this.cbType.TabIndex = 17;
+            this.cbType.TabIndex = 3;
             // 
             // numType
             // 
@@ -189,14 +192,14 @@
             0});
             this.numType.Name = "numType";
             this.numType.Size = new System.Drawing.Size(151, 20);
-            this.numType.TabIndex = 18;
+            this.numType.TabIndex = 4;
             // 
             // txtDate
             // 
             this.txtDate.Location = new System.Drawing.Point(88, 198);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(153, 20);
-            this.txtDate.TabIndex = 19;
+            this.txtDate.TabIndex = 5;
             // 
             // RegisterArts
             // 

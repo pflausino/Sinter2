@@ -27,7 +27,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7E212917D53C9998B5EA3BEF9399E891"
+        "MsmKey" = "8:_A9AC7ABD8D5B68870BD6F95209170F9D"
         "OwnerKey" = "8:_3C206201F7444C518534B2FEA120E940"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7E212917D53C9998B5EA3BEF9399E891"
+        "OwnerKey" = "8:_A9AC7ABD8D5B68870BD6F95209170F9D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -106,6 +106,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -167,14 +175,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7E212917D53C9998B5EA3BEF9399E891"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A9AC7ABD8D5B68870BD6F95209170F9D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MySql.Data, Version=6.10.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7E212917D53C9998B5EA3BEF9399E891"
+                    "_A9AC7ABD8D5B68870BD6F95209170F9D"
                     {
                     "Name" = "8:MySql.Data.dll"
                     "Attributes" = "3:512"
@@ -239,7 +247,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_940A096291D74054B5B2F6CAA0848FE2"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -265,7 +273,7 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Sinter2"
-        "ProductCode" = "8:{34E896B0-A29C-4D4E-A346-ADA46137ADB3}"
+        "ProductCode" = "8:{BF7AA6D5-3047-48C3-BA64-A743D429AD88}"
         "PackageCode" = "8:{DD1B5985-4AA8-4676-8D17-293AABAD1C6D}"
         "UpgradeCode" = "8:{2300DD34-F1C3-4C12-8173-8A28E9FAD3A4}"
         "AspNetVersion" = "8:4.0.30319.0"
@@ -287,7 +295,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:1"
+        "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
